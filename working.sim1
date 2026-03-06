@@ -1,0 +1,27 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Push" CircId="Push-2" mainComp="false" Show_id="false" Show_Val="false" Pos="232,48" rotation="0" hflip="1" vflip="1" label="Push-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Subcircuit" CircId="Uno-8" mainComp="false" Show_id="true" Show_Val="false" Pos="-28,16" rotation="0" hflip="1" vflip="1" label="Uno-8" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="../../../../Documents/Arduino/sketch_mar6a/build/arduino.avr.unowifi/sketch_mar6a.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="LedRgb" CircId="LedRgb-9" mainComp="false" Show_id="false" Show_Val="false" Pos="188,120" rotation="0" hflip="1" vflip="1" label="LedRgb-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" CommonCathode="true" Threshold_R="2.4 V" MaxCurrent_R="30 mA" Resistance_R="0.6 Ω" Threshold_G="3.5 V" MaxCurrent_G="30 mA" Resistance_G="0.6 Ω" Threshold_B="3.5 V" MaxCurrent_B="30 mA" Resistance_B="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-20,152" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Push-2-pinP0" endpinid="Uno-8-2" pointList="216,48,216,-16,-84,-16,-84,48,-20,48" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="LedRgb-9-Pin0" endpinid="Uno-8-11" pointList="172,112,140,112,140,244,-44,244,-44,128,-20,128" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="LedRgb-9-Pin1" endpinid="Uno-8-10" pointList="172,120,148,120,148,260,-68,260,-68,120,-20,120" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="LedRgb-9-Pin2" endpinid="Uno-8-9" pointList="172,128,172,268,-80,268,-80,112,-20,112" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="LedRgb-9-Pin3" endpinid="Node-12-1" pointList="204,120,204,-84,-164,-84,-164,152,-20,152" />
+
+<item itemtype="Connector" uid="Connector-37" startpinid="Push-2-switch0pinN" endpinid="Node-12-0" pointList="248,48,252,48,252,276,-116,276,-116,152,-20,152" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Node-12-2" endpinid="Uno-8-GND2" pointList="-20,152,-20,152" />
+
+</circuit>
